@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            text-align: center;
+            width: 100px;
+            height:100px;
+            background-color: deeppink;
+            position: relative;
+        }
+        #ko{
+            animation-name: game;
+            /* dat ten animation */
+            animation-duration: 1s;
+            /* thoi gian cua moi vong chay */
+            animation-iteration-count: infinite; 
+            /* chay vo cuc khong dung */
+        }
+
+        @keyframes game{
+            0% {background-color: darkorchid; left: 0px; top:0px;}
+            25% {background-color: rgb(214, 13, 144); left: 300px; top:0px;}
+            50% {background-color: rgb(249, 12, 253); left: 300px; top:300px;}
+            75% {background-color: rgb(245, 28, 220); left: 0px; top:300px;}
+            100% {background-color: rgb(240, 9, 175); left: 0px; top:0px;}
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Diệp Thái Thiên Long</h1>
+    <div>
+        <button>Luôn Đúng</button>
+        <button id="ko" onclick="ok()">Sai mà còn hay cãi</button>
+    </div>
+    <script>
+        function ok(){
+            alert("Cũng có cố gắng đấy thằng NGU");
+        }
+    </script>
+</body>
+</html>
